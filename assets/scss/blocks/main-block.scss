@@ -186,6 +186,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		background-size: 12px 9px;
 		background-position: center center;
 		z-index: 10;
+		cursor: pointer;
 	}
 	.main-button-prev {
 		left: -49px;
@@ -504,6 +505,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		background-color: #fff;
 		box-shadow: 0px 2px 9px rgba(51, 101, 114, 0.13);
 		transition: all 0.3s ease-in;
+		cursor: pointer;
 		&:hover {
 			background-color: #622572;
 			border-color: #622572;
@@ -783,6 +785,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		border-radius: 13px;
 		border: 1px solid #CDDBDE;
 		transition: all 0.3s ease-in;
+		cursor: pointer;
 		&:hover {
 			background-color: #622572;
 			border-color: #622572;

@@ -2234,7 +2234,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   background-repeat: no-repeat;
   background-size: 12px 9px;
   background-position: center center;
-  z-index: 10; }
+  z-index: 10;
+  cursor: pointer; }
 
 .main-block .main-button-prev {
   left: -49px;
@@ -2572,7 +2573,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   border: 1px solid #fff;
   background-color: #fff;
   box-shadow: 0px 2px 9px rgba(51, 101, 114, 0.13);
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease-in;
+  cursor: pointer; }
   .main-block__recommended-option:hover {
     background-color: #622572;
     border-color: #622572; }
@@ -2860,7 +2862,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   margin-bottom: 8px;
   border-radius: 13px;
   border: 1px solid #CDDBDE;
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease-in;
+  cursor: pointer; }
   .main-block__list-option:hover {
     background-color: #622572;
     border-color: #622572; }
