@@ -1,0 +1,1583 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+
+<section class="main-block">
+	<div class="main-block__line-block">
+		<div class="main-block__logo">upskill</div>
+		<div class="main-block__line-wrapper">
+			<div class="main-block__line-photo"><img src="img/smile.png" alt=""></div>
+			<div class="main-block__line-title">See how we get only relevant apply on <span>Upwork in 1 click</span></div>
+			<div class="main-block__line-title mobile">Meet Something New</span></div>
+		</div>
+	</div>
+	<div class="main-block__wrapper">
+		<div class="main-block__content-block">
+			<div class="main-block__content-heading">
+				<div class="main-block__logo">upskill</div>
+				<div class="main-block__content-heading-wrapper">
+					<a href="javascript:;" class="btn btn--work" data-toggle="modal" data-target="#popup_how">
+						<div>
+							<svg width="6" height="14">
+								<use xlink:href="#mark"></use>
+							</svg>
+						</div>
+						<span>How We Work</span>
+					</a>
+					<div class="main-block__button-wrapper">
+						<div class="btn--icon"><i></i></div>
+						<a href="javascript:;" class="btn btn--main">
+							<div class="btn-wrapper">
+								<b>New</b><span>Upwork RSS</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="main-block__content-wrapper">
+				<div class="main-block__content-inner">
+					<div class="main-block__content-title">Set skills right and get more requests <span>today!</span></div>
+					<div class="main-block__content-text">
+						<p>Select categories to increase the number of request in a way appropriate categories in Upwork</p>
+					</div>
+				</div>
+				<div class="main-block__slider-wrapper">
+					<div class="main-button-prev"></div>
+					<div id="main_slider" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="main-block__slide-wrapper">
+									<div class="main-block__slide-inner">
+										<div class="main-block__slide-title">Step 1</div>
+										<div class="main-block__slide-text">
+											<p>Choose your appropriate specialization</p>
+										</div>
+									</div>
+									<div class="main-block__slide-photo">
+										<svg width="183" height="116">
+											<use xlink:href="#steps_one"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="main-block__slide-wrapper">
+									<div class="main-block__slide-inner">
+										<div class="main-block__slide-title">Step 2</div>
+										<div class="main-block__slide-text">
+											<p>Enter your speciality and subspecialities</p>
+										</div>
+									</div>
+									<div class="main-block__slide-photo">
+										<img src="img/steps_two.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="main-block__slide-wrapper">
+									<div class="main-block__slide-inner">
+										<div class="main-block__slide-title">Step 3</div>
+										<div class="main-block__slide-text">
+											<p>Get list of categories and paste them to Upwork</p>
+										</div>
+									</div>
+									<div class="main-block__slide-photo">
+										<img src="img/steps_three.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-button-next active"></div>
+				</div>
+			</div>
+			<div class="main-block__steps-block">
+				<div class="main-block__steps-container">
+					<div class="main-block__steps-wrapper first">
+						<label for="steps_first" class="main-block__steps-label">Step 1. Choose Speciality</label>
+						<select id="steps_first" class="nice-select">
+							<option data-display="<span class='placeholder'>Choose Speciality</span>" class="option selected"></option>
+							<option value="1">Web Designer</option>
+							<option value="2">Software Design</option>
+							<option value="3">Game Design</option>
+							<option value="4">Interaction Design</option>
+							<option value="5">User Research</option>
+							<option value="6">UX Writing</option>
+						</select>
+					</div>
+					<div class="main-block__steps-wrapper disabled">
+						<label for="steps_second" class="main-block__steps-label">Step 2. Choose Subspeciality</label>
+						<div class="main-block__select-wrapper">
+							<select id="steps_second" class="nice-select">
+								<option data-display="<span class='placeholder'>Choose Subspeciality</span>" class="option selected"></option>
+								<option value="1">Web Designer</option>
+								<option value="2">Software Design</option>
+								<option value="3">Game Design</option>
+								<option value="4">Interaction Design</option>
+								<option value="5">User Research</option>
+								<option value="6">UX Writing</option>
+							</select>
+							<div class="main-block__others-block">
+								<span>Other Subspecialities</span>
+								<div class="main-block__others-wrapper">
+									<span>(2)</span>
+									<div class="main-block__others-close">
+										<svg width="14" height="14">
+											<use xlink:href="#delete"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-block__speciality-block disabled">
+						<div class="main-block__speciality-option disabled">
+							<span>Wireframes</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>User Research</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>SEO</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>UX Writing</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Visual Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>UI/UX Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Mobile Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Website Development</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Software Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Game Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Information Architecture</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Interaction Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+						<div class="main-block__speciality-option">
+							<span>Graphic Design</span>
+							<div class="main-block__speciality-checked"></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-block__steps-inner">
+					<div class="main-block__waiting-block">
+						<div class="main-block__steps-photo"><img src="img/waiting.svg" alt=""></div>
+						<div class="main-block__steps-title">Choose Speciality to See Categories</div>
+					</div>
+					<div class="main-block__recommended-block">
+						<div class="main-block__recommended-title">Recommended Categories for <span>Design</span></div>
+						<div class="main-block__recommended-wrapper">
+							<div class="main-block__recommended-option repeated">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Prototype</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option disabled">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Wireframes</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Style Guide</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Mockup</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option repeated">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Style Guide</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">User Flow</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">User Flow</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Components Design</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">User Flow</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Icons</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option repeated">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Email Template Design</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Icons</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Sketches</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option repeated">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Research Documentation</div>
+								<div class="main-block__recommended-checked">3x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Sketches</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option repeated">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Recommendation Markup</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">Website Redesign</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+							<div class="main-block__recommended-option">
+								<div class="main-block__recommended-icon">
+									<svg width="13" height="14">
+										<use xlink:href="#copy"></use>
+									</svg>
+								</div>
+								<div class="main-block__recommended-option-title">High Fidelity Design</div>
+								<div class="main-block__recommended-checked">2x</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-block__list-block">
+						<div class="main-block__list-title">All list of appropiate categories</div>
+						<div class="main-block__list-wrapper">
+							<div class="main-block__list-controls-wrapper">
+								<div class="main-block__list-controls-block">
+									<a href="javascript:;" class="main-block__list-control active" data-toggle="tab" data-target="#tags-tab-1">
+										<span>Web Designer</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-2">
+										<span>UX Writing</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-3">
+										<span>Mobile Design</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-4">
+										<span>Mobile Design</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-5">
+										<span>Mobile Design</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-6">
+										<span>Mobile Design</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-7">
+										<span>Mobile Design</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+									<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-8">
+										<span>Mobile Design</span>
+										<div class="main-block__list-value">12</div>
+									</a>
+								</div>
+							</div>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tags-tab-1">
+									<div class="main-block__list-inner">
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Prototype</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Wireframes</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Prototype</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Style Guide</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">User Flow</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Research Documentation</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Icons</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Research</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tags-tab-2">
+									<div class="main-block__list-inner">
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Prototype</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Wireframes</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Prototype</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Style Guide</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">User Flow</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Research Documentation</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Icons</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Research</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tags-tab-3">
+									<div class="main-block__list-inner">
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Prototype</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Wireframes</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Prototype</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Style Guide</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Mockup</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Wireframes</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Sketches</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">User Flow</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Icons</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Style Guide</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Research Documentation</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Icons</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+										<div class="main-block__list-option">
+											<div class="main-block__list-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__list-option-title">Research</div>
+											<div class="main-block__list-checked">2x</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-block__mobile-steps-block">
+				<div class="main-block__controls-block">
+					<button type="button" class="main-block__control active" id="control_1" data-toggle="tab" data-target="#steps-tab-1">Step 1</button>
+					<button type="button" class="main-block__control disabled" id="control_2" data-toggle="tab" data-target="#steps-tab-2">Step 2</button>
+					<button type="button" class="main-block__control disabled" id="control_3" data-toggle="tab" data-target="#steps-tab-3">Results</button>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane active" id="steps-tab-1">
+						<div class="main-block__first-step-block">
+							<div class="main-block__steps-wrapper first">
+								<label for="steps_third" class="main-block__steps-label">Step 1. Choose Speciality</label>
+								<select id="steps_third" class="nice-select">
+									<option data-display="<span class='placeholder'>Choose Speciality</span>" class="option selected"></option>
+									<option value="1">Web Designer</option>
+									<option value="2">Software Design</option>
+									<option value="3">Game Design</option>
+									<option value="4">Interaction Design</option>
+									<option value="5">User Research</option>
+									<option value="6">UX Writing</option>
+								</select>
+							</div>
+							<a href="javascript:;" class="btn btn--step disabled" id="toggle_1" data-toggle="tab" data-target="#steps-tab-2">
+								<div>
+									<svg width="14" height="14">
+										<use xlink:href="#step"></use>
+									</svg>
+								</div>
+								<span>Next Step</span>
+							</a>
+						</div>
+					</div>
+					<div class="tab-pane" id="steps-tab-2">
+						<div class="main-block__second-step-block">
+							<div class="main-block__steps-wrapper">
+								<label for="steps_fourth" class="main-block__steps-label">Step 2. Choose Subspeciality</label>
+								<div class="main-block__select-wrapper">
+									<select id="steps_fourth" class="nice-select">
+										<option data-display="<span class='placeholder'>Choose Subspeciality</span>" class="option selected"></option>
+										<option value="1">Web Designer</option>
+										<option value="2">Software Design</option>
+										<option value="3">Game Design</option>
+										<option value="4">Interaction Design</option>
+										<option value="5">User Research</option>
+										<option value="6">UX Writing</option>
+									</select>
+									<div class="main-block__others-block">
+										<span>Other Subspecialities</span>
+										<div class="main-block__others-wrapper">
+											<span>(2)</span>
+											<div class="main-block__others-close">
+												<svg width="14" height="14">
+													<use xlink:href="#delete"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-block__speciality-block disabled">
+								<div class="main-block__speciality-option disabled">
+									<span>Wireframes</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>User Research</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>SEO</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>UX Writing</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Visual Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>UI/UX Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Mobile Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Website Development</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Software Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Game Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Information Architecture</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Interaction Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+								<div class="main-block__speciality-option">
+									<span>Graphic Design</span>
+									<div class="main-block__speciality-checked"></div>
+								</div>
+							</div>
+							<div class="main-block__steps-button-wrapper" id="scroll_buttons">
+								<button type="button" class="btn btn--back" id="toggle_2" data-toggle="tab" data-target="#steps-tab-1">
+									<svg width="14" height="14">
+										<use xlink:href="#back"></use>
+									</svg>
+								</button>
+								<a href="javascript:;" class="btn btn--step disabled" id="toggle_3" data-toggle="tab" data-target="#steps-tab-3">
+									<div>
+										<svg width="14" height="14">
+											<use xlink:href="#step"></use>
+										</svg>
+									</div>
+									<span>Next Step</span>
+									<b>Generate Results</b>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="steps-tab-3">
+						<div class="main-block__third-step-block">
+							<div class="main-block__recommended-block active">
+								<div class="main-block__recommended-title">Recommended Categories for <span>Design</span></div>
+								<div class="main-block__recommended-container">
+									<div class="main-block__recommended-wrapper">
+										<div class="main-block__recommended-option repeated">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Prototype</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option disabled">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Wireframes</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Style Guide</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Mockup</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option repeated">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Style Guide</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">User Flow</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">User Flow</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Components Design</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">User Flow</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Icons</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option repeated">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Email Template Design</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Icons</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Sketches</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option repeated">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Research Documentation</div>
+											<div class="main-block__recommended-checked">3x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Sketches</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option repeated">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Recommendation Markup</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">Website Redesign</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+										<div class="main-block__recommended-option">
+											<div class="main-block__recommended-icon">
+												<svg width="13" height="14">
+													<use xlink:href="#copy"></use>
+												</svg>
+											</div>
+											<div class="main-block__recommended-option-title">High Fidelity Design</div>
+											<div class="main-block__recommended-checked">2x</div>
+										</div>
+									</div>
+								</div>
+								<div class="main-block__pagination-block">
+									<div class="main-block__pagination-option active" id="pagination_1"></div>
+									<div class="main-block__pagination-option" id="pagination_2"></div>
+									<div class="main-block__pagination-option" id="pagination_3"></div>
+									<div class="main-block__pagination-option" id="pagination_4"></div>
+								</div>
+							</div>
+
+							<!-- PAGINATION -->
+
+							<div class="main-block__list-block active">
+								<div class="main-block__list-title">All list of appropiate categories</div>
+								<div class="main-block__list-wrapper">
+									<div class="main-block__list-controls-wrapper">
+										<div class="main-block__list-controls-block">
+											<a href="javascript:;" class="main-block__list-control active" data-toggle="tab" data-target="#tags-tab-9">
+												<span>Web Designer</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-10">
+												<span>UX Writing</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-11">
+												<span>Mobile Design</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-12">
+												<span>Mobile Design</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-13">
+												<span>Mobile Design</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-14">
+												<span>Mobile Design</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-15">
+												<span>Mobile Design</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+											<a href="javascript:;" class="main-block__list-control" data-toggle="tab" data-target="#tags-tab-16">
+												<span>Mobile Design</span>
+												<div class="main-block__list-value">12</div>
+											</a>
+										</div>
+									</div>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tags-tab-9">
+											<div class="main-block__tab-wrapper">
+												<div class="main-block__list-container" id="list_pagination_1">
+													<div class="main-block__list-inner">
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Prototype</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Wireframes</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Prototype</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Mockup</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Style Guide</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Mockup</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Mockup</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Sketches</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">User Flow</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Sketches</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Sketches</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Research Documentation</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Icons</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Research</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+													</div>
+												</div>
+												<div class="main-block__pagination-block">
+													<div class="main-block__pagination-option main-block__pagination-option--first active"></div>
+													<div class="main-block__pagination-option main-block__pagination-option--second"></div>
+													<div class="main-block__pagination-option main-block__pagination-option--third"></div>
+													<div class="main-block__pagination-option main-block__pagination-option--fourth"></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tags-tab-10">
+											<div class="main-block__tab-wrapper">
+												<div class="main-block__list-container" id="list_pagination_2">
+													<div class="main-block__list-inner">
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Prototype</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Wireframes</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Prototype</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Mockup</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Style Guide</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Mockup</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Mockup</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Sketches</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">User Flow</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Sketches</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Sketches</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Research Documentation</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Icons</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+														<div class="main-block__list-option">
+															<div class="main-block__list-icon">
+																<svg width="13" height="14">
+																	<use xlink:href="#copy"></use>
+																</svg>
+															</div>
+															<div class="main-block__list-option-title">Research</div>
+															<div class="main-block__list-checked">2x</div>
+														</div>
+													</div>
+												</div>
+												<div class="main-block__pagination-block">
+													<div class="main-block__pagination-option main-block__pagination-option--first active"></div>
+													<div class="main-block__pagination-option main-block__pagination-option--second"></div>
+													<div class="main-block__pagination-option main-block__pagination-option--third"></div>
+													<div class="main-block__pagination-option main-block__pagination-option--fourth"></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tags-tab-11">
+											<div class="main-block__list-container" id="list_pagination_3">
+												<div class="main-block__list-inner">
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Prototype</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Wireframes</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Prototype</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Mockup</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Style Guide</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Mockup</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Wireframes</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Sketches</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">User Flow</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Icons</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Style Guide</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Research Documentation</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Icons</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+													<div class="main-block__list-option">
+														<div class="main-block__list-icon">
+															<svg width="13" height="14">
+																<use xlink:href="#copy"></use>
+															</svg>
+														</div>
+														<div class="main-block__list-option-title">Research</div>
+														<div class="main-block__list-checked">2x</div>
+													</div>
+												</div>
+											</div>
+											<div class="main-block__pagination-block">
+												<div class="main-block__pagination-option main-block__pagination-option--first active"></div>
+												<div class="main-block__pagination-option main-block__pagination-option--second"></div>
+												<div class="main-block__pagination-option main-block__pagination-option--third"></div>
+												<div class="main-block__pagination-option main-block__pagination-option--fourth"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('template/popups.html')
+@@include('template/sprite.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+.btn {
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: none;
+  }
+  
+  &:active {
+    box-shadow: none;
+  }
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    text-decoration: none !important;
+    outline: none !important;
+  }
+}
+
+.btn--work {
+  display: flex;
+  flex-direction: row;
+  width: 142px;
+  padding: 0;
+  transition: all 0.3s ease-in;
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    margin-right: 14px;
+    background-color: #fff;
+    box-shadow: 0 2px 14px rgba(80, 171, 193, 0.1);
+    transition: all 0.3s ease-in;
+  }
+  div svg {
+    fill: #491556;
+    stroke: #491556;
+    transition: all 0.3s ease-in;
+  }
+  span {
+    position: relative;
+    display: block;
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #1C1E2E;
+    transition: all 0.3s ease-in;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 7px;
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #622572;
+    }
+  }
+  &:hover div,
+  &:active div {
+    background-color: #622572;
+  }
+  &:hover div svg,
+  &:active div svg {
+    fill: #fff;
+    stroke: #fff;
+  }
+}
+
+.btn--main {
+  position: relative;
+  display: block;
+  width: 178px;
+  border-radius: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #DC1010;
+  color: #fff;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  div.btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  div.btn-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 34px;
+    height: 80px;
+    background-color: rgba(255,255,255,0.2);
+    transform: rotate(33deg);
+    transition: all 0.3s ease-in;
+  }
+  b {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-right: 8px;
+    text-transform: uppercase;
+  }
+  span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  &:hover, &:active {
+    background-color: #622572;
+  }
+}
+
+.btn--icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -5px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #F7F7FA;
+  transition: all 0.3s ease-in;
+  z-index: 10;
+}
+
+.btn--icon i {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #DC1010;
+  transition: all 0.3s ease-in;
+}
+
+.btn--main.disabled {
+  background-color: #91B4BE;
+  color: #fff;
+  div.btn-wrapper::after {
+    display: none;
+  }
+  div.btn--icon {
+    display: none;
+  }
+}
+
+.btn--send {
+  border: 0;
+  padding: 0;
+  background: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background-color: #DC1010;
+  box-shadow: 0px 5px 14px rgba(82, 156, 174, 0.28);
+  transition: all 0.3s ease-in;
+  &:hover, &:active {
+    background-color: #622572;
+  }
+}
+
+.btn--step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  background-color: #F4F8F9;
+  transition: all 0.3s ease-in;
+  span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #1C1E2E;
+    transition: all 0.3s ease-in;
+    &.delete {
+      display: none;
+    }
+  }
+  b {
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #1C1E2E;
+    transition: all 0.3s ease-in;
+    &.active {
+      display: block;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 13px;
+    background-color: #4CD8FA;
+    box-shadow: 0px 5px 12px rgba(82, 156, 174, 0.16);
+    margin-right: 18px;
+    transition: all 0.3s ease-in;
+  }
+  &:hover,
+  &:active {
+    background-color: #47C5E4;
+  }
+  &:hover div,
+  &:active div {
+    background-color: rgba(255,255,255,0.2);
+  }
+  &:hover span,
+  &:active span {
+    font-weight: 500;
+    color: #fff;
+  }
+  &.disabled {
+    background-color: #F4F8F9;
+    pointer-events: none;
+  }
+  &.disabled div {
+    background-color: #E1EEF2;
+    box-shadow: none;
+  }
+  &.disabled span {
+    color: #A2B1B4;
+  }
+  &.disabled:hover,
+  &.disabled:active {
+    background-color: #F4F8F9;
+  }
+  &.disabled:hover div,
+  &.disabled:active div {
+    background-color: #E1EEF2;
+    box-shadow: none;
+  }
+  &.disabled:hover span,
+  &.disabled:active span {
+    color: #A2B1B4;
+  }
+  &.active {
+    background-color: #47C5E4;
+  }
+  &.active div {
+    background-color: rgba(255,255,255,0.2);
+  }
+  &.active span {
+    font-weight: 500;
+    color: #fff;
+  }
+  &.active b {
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+.btn--back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 13px;
+  background-color: #fff;
+  box-shadow: 0px 5px 12px rgba(82, 156, 174, 0.16);
+  transition: all 0.3s ease-in;
+  svg {
+    display: block;
+    fill: #1C1E2E;
+    transition: all 0.3s ease-in;
+  }
+  &:hover, &:active {
+    background-color: #47C5E4;
+  }
+  &:hover svg,
+  &:active svg {
+    fill: #fff;
+  }
+  &.disabled {
+    background-color: #F4F8F9;
+    pointer-events: none;
+  }
+  &.disabled svg {
+    fill: #A2B1B4;
+  }
+  &.disabled:hover,
+  &.disabled:active {
+    background-color: #F4F8F9;
+  }
+  &.disabled:hover svg,
+  &.disabled:active svg {
+    fill: #A2B1B4;
+  }
+}
