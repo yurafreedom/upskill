@@ -2463,14 +2463,14 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   font-family: 'GothamPro', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #0D2E37;
   line-height: 1.2;
+  color: #0D2E37;
   border: 1px solid #CDDBDE;
   border-radius: 13px;
   background-color: #fff;
   transition: all 0.3s ease-in;
   cursor: pointer; }
-  .main-block__speciality-option:hover {
+  .main-block__speciality-option:hover, .main-block__speciality-option:active {
     background-color: #622572;
     border-color: #622572;
     font-weight: 500;
@@ -3004,6 +3004,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   font-weight: 600;
   color: #A2B1B4;
   padding: 0;
+  border: 0;
+  background: 0;
   transition: all 0.3s ease-in; }
   .main-block__control:not(:last-child) {
     margin-right: 30px; }
@@ -3243,6 +3245,11 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     display: none; }
   .main-block__mobile-steps-block {
     display: block; }
+  .main-block__speciality-option:hover {
+    font-weight: 400;
+    color: #0D2E37;
+    border: 1px solid #CDDBDE;
+    background-color: #fff; }
   .main-block__steps-wrapper.first {
     padding-left: 10px;
     padding-right: 10px; }

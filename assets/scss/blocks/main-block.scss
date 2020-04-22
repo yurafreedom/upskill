@@ -397,14 +397,14 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		font-family: 'GothamPro', sans-serif;
 		font-size: 12px;
 		font-weight: 400;
-		color: #0D2E37;
 		line-height: 1.2;
+		color: #0D2E37;
 		border: 1px solid #CDDBDE;
 		border-radius: 13px;
 		background-color: #fff;
 		transition: all 0.3s ease-in;
 		cursor: pointer;
-		&:hover {
+		&:hover, &:active {
 			background-color: #622572;
 			border-color: #622572;
 			font-weight: 500;
@@ -922,6 +922,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		font-weight: 600;
 		color: #A2B1B4;
 		padding: 0;
+		border: 0;
+		background: 0;
 		transition: all 0.3s ease-in;
 		&:not(:last-child) {
 			margin-right: 30px;
@@ -1167,6 +1169,14 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		}
 		&__mobile-steps-block {
 			display: block;
+		}
+		&__speciality-option {
+			&:hover {
+				font-weight: 400;
+				color: #0D2E37;
+				border: 1px solid #CDDBDE;
+				background-color: #fff;
+			}
 		}
 		&__steps-wrapper.first {
 			padding-left: 10px;
