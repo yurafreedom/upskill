@@ -2470,16 +2470,6 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   background-color: #fff;
   transition: all 0.3s ease-in;
   cursor: pointer; }
-  .main-block__speciality-option:hover, .main-block__speciality-option:active {
-    background-color: #622572;
-    border-color: #622572;
-    font-weight: 500;
-    color: #fff; }
-  .main-block__speciality-option.checked {
-    background-color: #622572;
-    border-color: #622572;
-    font-weight: 500;
-    color: #fff; }
   .main-block__speciality-option.disabled {
     border-color: #CDDBDE;
     color: #A2B1B4; }
@@ -2489,6 +2479,21 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     font-weight: 400;
     color: #A2B1B4;
     cursor: default; }
+  .main-block__speciality-option:hover {
+    background-color: #622572;
+    border-color: #622572;
+    font-weight: 500;
+    color: #fff; }
+  .main-block__speciality-option:active {
+    background-color: #622572;
+    border-color: #622572;
+    font-weight: 500;
+    color: #fff; }
+  .main-block__speciality-option.checked {
+    background-color: #622572;
+    border-color: #622572;
+    font-weight: 500;
+    color: #fff; }
 
 .main-block__speciality-option.checked .main-block__speciality-checked {
   opacity: 1;
@@ -2576,6 +2581,9 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   transition: all 0.3s ease-in;
   cursor: pointer; }
   .main-block__recommended-option:hover {
+    background-color: #622572;
+    border-color: #622572; }
+  .main-block__recommended-option:active {
     background-color: #622572;
     border-color: #622572; }
 
@@ -2865,6 +2873,9 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   transition: all 0.3s ease-in;
   cursor: pointer; }
   .main-block__list-option:hover {
+    background-color: #622572;
+    border-color: #622572; }
+  .main-block__list-option:active {
     background-color: #622572;
     border-color: #622572; }
 
@@ -3245,11 +3256,6 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     display: none; }
   .main-block__mobile-steps-block {
     display: block; }
-  .main-block__speciality-option:hover {
-    font-weight: 400;
-    color: #0D2E37;
-    border: 1px solid #CDDBDE;
-    background-color: #fff; }
   .main-block__steps-wrapper.first {
     padding-left: 10px;
     padding-right: 10px; }

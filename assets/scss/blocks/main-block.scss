@@ -404,18 +404,6 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		background-color: #fff;
 		transition: all 0.3s ease-in;
 		cursor: pointer;
-		&:hover, &:active {
-			background-color: #622572;
-			border-color: #622572;
-			font-weight: 500;
-			color: #fff;
-		}
-		&.checked {
-			background-color: #622572;
-			border-color: #622572;
-			font-weight: 500;
-			color: #fff;
-		}
 		&.disabled {
 			border-color: #CDDBDE;
 			color: #A2B1B4;
@@ -426,6 +414,24 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 			font-weight: 400;
 			color: #A2B1B4;
 			cursor: default;
+		}
+		&:hover {
+			background-color: #622572;
+			border-color: #622572;
+			font-weight: 500;
+			color: #fff;
+		}
+		&:active {
+			background-color: #622572;
+			border-color: #622572;
+			font-weight: 500;
+			color: #fff;
+		}
+		&.checked {
+			background-color: #622572;
+			border-color: #622572;
+			font-weight: 500;
+			color: #fff;
 		}
 	}
 	&__speciality-option.checked &__speciality-checked {
@@ -507,6 +513,10 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		transition: all 0.3s ease-in;
 		cursor: pointer;
 		&:hover {
+			background-color: #622572;
+			border-color: #622572;
+		}
+		&:active {
 			background-color: #622572;
 			border-color: #622572;
 		}
@@ -787,6 +797,10 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		transition: all 0.3s ease-in;
 		cursor: pointer;
 		&:hover {
+			background-color: #622572;
+			border-color: #622572;
+		}
+		&:active {
 			background-color: #622572;
 			border-color: #622572;
 		}
@@ -1169,14 +1183,6 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		}
 		&__mobile-steps-block {
 			display: block;
-		}
-		&__speciality-option {
-			&:hover {
-				font-weight: 400;
-				color: #0D2E37;
-				border: 1px solid #CDDBDE;
-				background-color: #fff;
-			}
 		}
 		&__steps-wrapper.first {
 			padding-left: 10px;
