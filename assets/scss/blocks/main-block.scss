@@ -1267,6 +1267,48 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 				margin-right: 0;
 			}
 		}
+		&__speciality-option {
+			&:hover {
+				background-color: #fff;
+				border-color: #CDDBDE;
+				font-weight: 400;
+				color: #0D2E37;
+			}
+			&:active {
+				background-color: #622572;
+				border-color: #622572;
+				font-weight: 500;
+				color: #fff;
+			}
+		}
+		&__recommended-option:hover {
+			border: 1px solid #CDDBDE;
+			background-color: #fff;
+			box-shadow: none;
+		}
+		&__recommended-option:hover &__recommended-icon {
+			background-color: #F4F8F9;
+			svg {
+				fill: #91B4BE;
+			}
+		}
+		&__recommended-option:hover &__recommended-option-title {
+			color: #0D2E37;
+		}
+		&__list-option:hover {
+			border: 1px solid #CDDBDE;
+			background-color: #fff;
+			box-shadow: none;
+		}
+		&__list-option:hover &__list-icon {
+			background-color: #F4F8F9;
+			svg {
+				fill: #91B4BE;
+			}
+		}
+		&__list-option:hover &__list-option-title {
+			color: #0D2E37;
+		}
 	}
 }
 
