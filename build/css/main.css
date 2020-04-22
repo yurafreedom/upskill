@@ -3323,16 +3323,6 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     padding-right: 32px; }
   .main-block__control:not(:last-child) {
     margin-right: 0; }
-  .main-block__speciality-option:hover {
-    background-color: #fff;
-    border-color: #CDDBDE;
-    font-weight: 400;
-    color: #0D2E37; }
-  .main-block__speciality-option:active {
-    background-color: #622572;
-    border-color: #622572;
-    font-weight: 500;
-    color: #fff; }
   .main-block__recommended-option:hover {
     border: 1px solid #CDDBDE;
     background-color: #fff;
