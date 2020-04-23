@@ -611,7 +611,9 @@ $('.nice-select').on('click', function() {
 });
 
 $('#steps_first').change(function() {
-	$('.main-block__steps-wrapper').removeClass('first disabled');
+	$('.main-block__steps-wrapper').removeClass('first');
+	$('.main-block__select-wrapper').removeClass('disabled');
+	$('.main-block__steps-label').removeClass('disabled');
 });
 
 $('#steps_second').change(function() {
