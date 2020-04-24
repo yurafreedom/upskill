@@ -874,16 +874,13 @@ $('.tooltip').tooltipster({
 });
 
 $('#popup_step_1').on('click', function() {
-	$('#popup_control_1').removeClass('active');
-	$('#popup_control_2').addClass('active');
+	$('#popup_control_2').trigger('click');
 });
 
 $('#popup_step_2').on('click', function() {
-	$('#popup_control_2').removeClass('active');
-	$('#popup_control_3').addClass('active');
+	$('#popup_control_3').trigger('click');
 });
 
 $('#popup_step_3').on('click', function() {
-	$('#popup_control_3').removeClass('active');
-	$('#popup_control_4').addClass('active');
+	$('#popup_control_4').trigger('click');
 });
