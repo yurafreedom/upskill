@@ -166,13 +166,13 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 			position: absolute;
 			opacity: 0;
 			pointer-events: none;
-			top: 5px;
-			left: 15px;
-			width: 288px;
-			height: 75px;
+			top: -3px;
+			left: 4px;
+			width: 310px;
+			height: 90px;
 			background-image: url('../img/input-bg-active.svg');
 			background-repeat: no-repeat;
-			background-size: auto;
+			background-size: 329px auto;
 			background-position: center;
 			z-index: 1;
 			transition: all 0.3s ease-in;
@@ -253,7 +253,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		width: calc(100% - 382px);
 		padding-top: 24px;
 		padding-left: 42px;
 		padding-right: 42px;
@@ -833,6 +833,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 	&__list-controls-wrapper {
 		position: relative;
 		display: block;
+		height: 42px;
+		margin-bottom: 20px;
 		overflow: hidden;
 		&::before {
 			content: '';
@@ -1121,6 +1123,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		z-index: 10;
 	}
 	&__control {
+		outline: 0 !important;
 		position: relative;
 		display: block;
 		font-size: 14px;
@@ -1309,6 +1312,7 @@ input[type="checkbox"]:checked + label .main-block__speciality-checked {
 		}
 		&__content-block {
 			order: 1;
+			width: 100%;
 			padding-left: 15px;
 			padding-right: 15px;
 			padding-bottom: 82px;
@@ -1790,6 +1794,9 @@ input[type="checkbox"]:checked + label .main-block__speciality-checked {
 
 @media screen and (min-width: 1200px) {
 	.main-block {
+		&__steps-inner {
+			width: calc(100% - 325px);
+		}
 		&__speciality-option:hover {
 			background-color: #622572;
 			border-color: #622572;
@@ -1838,17 +1845,11 @@ input[type="checkbox"]:checked + label .main-block__speciality-checked {
 			padding-left: 60px;
 			padding-right: 20px;
 		}
-		// &__list-controls-block {
-		// 	width: 360px;
-		// }
 	}
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1725px) {
 	.main-block {
-		&__steps-inner {
-			width: 63%;
-		}
 		&__recommended-wrapper {
 			width: 100%;
 			height: 185px;
