@@ -381,18 +381,18 @@ $('.btn--send').on('click', function() {
 	$('.main-block__input-wrapper.hidden').addClass('active scale-in-center');
 });
 
-$.fn.oldtoggle = function() {
-	var b = arguments;
-	return this.each(function (i, el) {
-		var a = function () {
-			var c = 0;
-			return function () {
-				b[c++ % b.length].apply(el, arguments);
-			}
-		}();
-		$(el).click(a);
-	});
-};
+// $.fn.oldtoggle = function() {
+// 	var b = arguments;
+// 	return this.each(function (i, el) {
+// 		var a = function () {
+// 			var c = 0;
+// 			return function () {
+// 				b[c++ % b.length].apply(el, arguments);
+// 			}
+// 		}();
+// 		$(el).click(a);
+// 	});
+// };
 
 $('.main-block__recommended-option').click(function() {
 	$(this).addClass('active');
@@ -767,9 +767,43 @@ $('.nice-select').on('click', function() {
 });
 
 $('#steps_first').change(function() {
+	var selectValue = $(this).val();
+	var allValue = $(this).val('1', '2', '3', '4', '5', '6'); 
+
+	var othersBlock = $('.main-block__others-block').removeClass('active');
+	var othersWrapper = $('.main-block__others-wrapper').removeClass('active');
+	var specialityBlock = $('.main-block__speciality-block').addClass('disabled');
+	var waitingBlock = $('.main-block__waiting-block').removeClass('disabled');
+	var stepsInner = $('.main-block__steps-inner').removeClass('active');
+	var recommendedBlock = $('.main-block__recommended-block').removeClass('active');
+	var resetSpecialityBlock = $('.main-block__speciality-block')[0].reset();
+	var othersCounter = $('.main-block__others-counter').html('(' + $('.main-block__checkbox-wrapper input:checkbox:checked').length + ')');
+	var listBlock = $('.main-block__list-block').removeClass('active');
+	var listControl = $('.main-block__list-control').removeClass('visible');
+	var tabPane = $('.tab-pane').removeClass('active');
+
+	var $select = $('#steps_second').parent().find('.nice-select .option.selected').removeClass('selected');
+	var $current = $('#steps_second').parent().find('.nice-select .current').html('<span class="placeholder">Select from the list</span>');
+
 	$('.main-block__steps-wrapper').removeClass('first');
 	$('.main-block__select-wrapper').removeClass('disabled');
 	$('.main-block__steps-label').removeClass('disabled');
+
+	if(allValue) {
+		othersBlock;
+		othersWrapper;
+		specialityBlock;
+		waitingBlock;
+		stepsInner;
+		recommendedBlock;
+		resetSpecialityBlock;
+		othersCounter;
+		listBlock;
+		listControl;
+		tabPane;
+		$select;
+		$current;
+	};
 });
 
 $('#steps_second').change(function() {
