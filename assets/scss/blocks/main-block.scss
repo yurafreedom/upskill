@@ -480,16 +480,12 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 	}
 	&__others-close {
 		outline: 0 !important;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+		display: block;
 		width: 32px;
 		height: 32px;
 		border: 0;
 		background: 0;
-		border-radius: 9px;
-		background-color: #fff;
+		padding: 0;
 		cursor: pointer;
 	}
 	&__speciality-label {
