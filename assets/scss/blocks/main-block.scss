@@ -1542,6 +1542,7 @@ input[type="checkbox"]:checked + label .main-block__speciality-checked {
 		.btn--main {
 			div.btn-wrapper {
 				&::after {
+					display: none;
 					right: -10px;
 				}
 			}

@@ -4084,6 +4084,7 @@ input[type="checkbox"]:checked + label .main-block__speciality-checked {
     fill: #622572;
     stroke: #622572; }
   .main-block .btn--main div.btn-wrapper::after {
+    display: none;
     right: -10px; } }
 
 @media screen and (min-width: 320px) and (max-width: 359px) {

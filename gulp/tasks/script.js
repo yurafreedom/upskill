@@ -4,11 +4,11 @@ module.exports = function() {
     $.gulp.task('scripts:lib', function() {
         return $.gulp.src('assets/js/libs/**/*')
             .pipe($.gp.concat('plugins.min.js'))
-            .pipe($.gp.uglify({
-                output: {
-                    'ascii_only': true
-                }
-            }))
+            // .pipe($.gp.uglify({
+            //     output: {
+            //         'ascii_only': true
+            //     }
+            // }))
             .pipe($.gulp.dest('build/js/'))
             .pipe($.bs.reload({
                 stream: true
@@ -17,12 +17,12 @@ module.exports = function() {
 
     $.gulp.task('scripts', function() {
         return $.gulp.src('assets/js/*.js')
-            .pipe($.gp.uglify({
-                output: {
-                    'ascii_only': true
-                }
-            }))
-            .pipe($.gp.rename({ suffix: '.min' }))
+            // .pipe($.gp.uglify({
+            //     output: {
+            //         'ascii_only': true
+            //     }
+            // }))
+            // .pipe($.gp.rename({ suffix: '.min' }))
             .pipe($.gulp.dest('build/js/'))
             .pipe($.bs.reload({
                 stream: true

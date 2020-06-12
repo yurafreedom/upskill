@@ -381,19 +381,6 @@ $('.btn--send').on('click', function() {
 	$('.main-block__input-wrapper.hidden').addClass('active scale-in-center');
 });
 
-$.fn.oldtoggle = function() {
-	var b = arguments;
-	return this.each(function (i, el) {
-		var a = function () {
-			var c = 0;
-			return function () {
-				b[c++ % b.length].apply(el, arguments);
-			}
-		}();
-		$(el).click(a);
-	});
-};
-
 $('.main-block__recommended-option').click(function() {
 	$(this).addClass('active');
 });
@@ -407,15 +394,17 @@ $('.main-block__speciality-checkbox').click(function() {
 	$('.main-block__others-wrapper').addClass('active');
 	$('.main-block__others-counter').html('(' + $('.main-block__checkbox-wrapper input:checkbox:checked').length + ')');
 	$(this).parent().parent().parent().parent().find('.main-block__list-block').addClass('active');
+	$('.main-block__third-step-block .main-block__list-block').addClass('active');
 });
 
 $('.main-block__others-close').on('click', function() {
 	$('.main-block__others-wrapper').removeClass('active');
 	$('.main-block__speciality-block')[0].reset();
+	$('.main-block__second-step-block .main-block__speciality-block')[0].reset();
 	$('.main-block__others-counter').html('(' + $('.main-block__checkbox-wrapper input:checkbox:checked').length + ')');
 	$('.main-block__list-block').removeClass('active');
 	$('.main-block__list-control').removeClass('visible');
-	$('.tab-pane').removeClass('active');
+	$('.main-block__list-wrapper .tab-pane').removeClass('active');
 });
 
 $('#speciality_checkbox_1').click(function() {
@@ -766,10 +755,41 @@ $('.nice-select').on('click', function() {
 	$('.list').toggleClass('scale-up-ver-top');
 });
 
+
+var othersBlock = $('.main-block__others-block');
+var othersWrapper = $('.main-block__others-wrapper');
+var specialityBlock = $('.main-block__speciality-block');
+var waitingBlock = $('.main-block__waiting-block');
+var stepsInner = $('.main-block__steps-inner');
+var recommendedBlock = $('.main-block__recommended-block');
+var othersCounter = $('.main-block__others-counter');
+var listBlock = $('.main-block__list-block');
+var listControl = $('.main-block__list-control');
+var tabPane = $('.main-block__list-wrapper').find('.tab-pane');
+
 $('#steps_first').change(function() {
+	var allValue = $(this).val('1', '2', '3', '4', '5', '6'); 
+	var $select = $('#steps_second');
+
 	$('.main-block__steps-wrapper').removeClass('first');
 	$('.main-block__select-wrapper').removeClass('disabled');
 	$('.main-block__steps-label').removeClass('disabled');
+
+	if(allValue) {
+		othersBlock.removeClass('active');
+		othersWrapper.removeClass('active');
+		specialityBlock.addClass('disabled');
+		waitingBlock.removeClass('disabled');
+		stepsInner.removeClass('active');
+		recommendedBlock.removeClass('active');
+		specialityBlock[0].reset();
+		othersCounter.html('(' + $('.main-block__checkbox-wrapper input:checkbox:checked').length + ')');
+		listBlock.removeClass('active');
+		listControl.removeClass('visible');
+		tabPane.removeClass('active');
+		$select.parent().find('.nice-select .option.selected').removeClass('selected');
+		$select.parent().find('.nice-select .current').html('<span class="placeholder">Select from the list</span>');
+	};
 });
 
 $('#steps_second').change(function() {
@@ -781,33 +801,60 @@ $('#steps_second').change(function() {
 });
 
 $('#steps_third').change(function() {
-	$(this).parent().parent().find('.btn--step').removeClass('disabled');
-});
+	var mobileAllValue = $(this).val('1', '2', '3', '4', '5', '6'); 
+	var $button = $(this).parent().parent().find('.btn--step');
+	var $mobileSelect = $('#steps_fourth');
+	var $buttonFourth = $('#steps_fourth').parent().parent().parent().find('.btn--step');
+	var $span = $('#steps_fourth').parent().parent().parent().find('.btn--step span');
+	var $b = $('#steps_fourth').parent().parent().parent().find('.btn--step b');
+	var $mobileSpecialityBlock = $('#steps_fourth').parent().parent().parent().find('.main-block__speciality-block');
+	var $stepsButtonWrapper = $('#steps_fourth').parent().parent().parent().find('.main-block__steps-button-wrapper');
+	var $controls = $('.main-block__control');
+	var $secondSpecialityBlock = $('.main-block__second-step-block .main-block__speciality-block');
+	$button.removeClass('disabled');
 
-$('#toggle_1').on('click', function() {
-	$('#control_1').removeClass('active');
-	$('#control_2').addClass('active');
-});
+	if(mobileAllValue) {
+		othersBlock.removeClass('active');
+		othersWrapper.removeClass('active');
+		specialityBlock.addClass('disabled');
+		waitingBlock.removeClass('disabled');
+		stepsInner.removeClass('active');
+		recommendedBlock.removeClass('active');
+		specialityBlock[0].reset();
+		$secondSpecialityBlock[0].reset();
+		othersCounter.html('(' + $('.main-block__checkbox-wrapper input:checkbox:checked').length + ')');
+		listBlock.removeClass('active');
+		listControl.removeClass('visible');
+		tabPane.removeClass('active');
+		$mobileSelect.parent().find('.nice-select .option.selected').removeClass('selected');
+		$mobileSelect.parent().find('.nice-select .current').html('<span class="placeholder">Select from the list</span>');
 
-$('#toggle_2').on('click', function() {
-	$('#control_1').addClass('active');
-	$('#control_2').removeClass('active');
-});
-
-$('#toggle_3').on('click', function() {
-	$('#control_2').removeClass('active');
-	$('#control_3').addClass('active');
-	$('.main-block__control').removeClass('disabled');
+		$buttonFourth.removeClass('active').addClass('disabled');
+		$buttonFourth.find('.btn--step').addClass('disabled');
+		$span.removeClass('delete');
+		$b.removeClass('active');
+		$mobileSpecialityBlock.addClass('disabled');
+		$stepsButtonWrapper.removeClass('fixed');
+		$controls.addClass('disabled');
+	};
 });
 
 $('#steps_fourth').change(function() {
-	$('.main-block__others-block').addClass('active');
-	$(this).parent().parent().parent().find('.btn--step').addClass('active');
-	$(this).parent().parent().parent().find('.btn--step').removeClass('disabled');
-	$(this).parent().parent().parent().find('.btn--step span').addClass('delete');
-	$(this).parent().parent().parent().find('.btn--step b').addClass('active');
-	$(this).parent().parent().parent().find('.main-block__speciality-block').removeClass('disabled');
-	$(this).parent().parent().parent().find('.main-block__steps-button-wrapper').addClass('fixed');
+
+	var $buttonFourth = $(this).parent().parent().parent().find('.btn--step');
+	var $span = $(this).parent().parent().parent().find('.btn--step span');
+	var $b = $(this).parent().parent().parent().find('.btn--step b');
+	var $mobileSpecialityBlock = $(this).parent().parent().parent().find('.main-block__speciality-block');
+	var $stepsButtonWrapper = $(this).parent().parent().parent().find('.main-block__steps-button-wrapper');
+
+	othersBlock.addClass('active');
+
+	$buttonFourth.addClass('active').removeClass('disabled');
+	$span.addClass('delete');
+	$b.addClass('active');
+	$mobileSpecialityBlock.removeClass('disabled');
+	$stepsButtonWrapper.addClass('fixed');
+	recommendedBlock.addClass('active');
 
 	$(window).on('scroll load', function() {
 	  var ScrollTopFixedHeight = 0;
@@ -820,6 +867,22 @@ $('#steps_fourth').change(function() {
 	   $('body').removeClass("scroll-top-active");
 	  }
 	});
+});
+
+$('#toggle_1').on('click', function() {
+	$('#control_1').removeClass('active disabled');
+	$('#control_2').addClass('active');
+});
+
+$('#toggle_2').on('click', function() {
+	$('#control_1').addClass('active');
+	$('#control_2').removeClass('active');
+});
+
+$('#toggle_3').on('click', function() {
+	$('#control_2').removeClass('active');
+	$('#control_3').addClass('active');
+	$('.main-block__control').removeClass('disabled');
 });
 
 $('.main-block__recommended-container').on('scroll', function() {
@@ -874,16 +937,13 @@ $('.tooltip').tooltipster({
 });
 
 $('#popup_step_1').on('click', function() {
-	$('#popup_control_1').removeClass('active');
-	$('#popup_control_2').addClass('active');
+	$('#popup_control_2').trigger('click');
 });
 
 $('#popup_step_2').on('click', function() {
-	$('#popup_control_2').removeClass('active');
-	$('#popup_control_3').addClass('active');
+	$('#popup_control_3').trigger('click');
 });
 
 $('#popup_step_3').on('click', function() {
-	$('#popup_control_3').removeClass('active');
-	$('#popup_control_4').addClass('active');
+	$('#popup_control_4').trigger('click');
 });
